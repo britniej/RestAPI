@@ -24,4 +24,4 @@ app.delete("/restaurant/:id", (req,res)=>{
     res.send("restaurants left:"+JSON.stringify(restaurants));
 })
 
-app.listen(4000,()=>console.log('Listening on 4000'))
+app.listen(process.env.PORT || 5000,()=>console.log('Listening on 5000'))
